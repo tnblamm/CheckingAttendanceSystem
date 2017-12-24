@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LoginVC: UIViewController {
 
     @IBOutlet weak var _username: UITextField!
     @IBOutlet weak var _password: UITextField!
@@ -39,21 +39,21 @@ class ViewController: UIViewController {
             return
         }
         
-        let email = _username.text
+        let username = _username.text
         let password = _password.text
-        if(email == "" || password == "")
+        if(username == "" || password == "")
         {
             return
         }
-        DoLogin(email!, password!)
+        DoLogin(username!, password!)
     }
-        func DoLogin(_ ema:String, _ psw:String )
+        func DoLogin(_ usrnm:String, _ psw:String )
         {
             let url = URL(string: "https://iteccyle8.herokuapp.com/authenticate/login")
             let session = URLSession.shared
             let request = NSMutableURLRequest(url: url!)
             request.httpMethod = "POST"
-            let paramToSend = "email" + ema + "& password= " + psw
+            let paramToSend = "username" + usrnm + "& password= " + psw
             request.httpBody = paramToSend.data(using: String.Encoding.utf8)
             let task = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) in
                 guard let _:Data = data else
