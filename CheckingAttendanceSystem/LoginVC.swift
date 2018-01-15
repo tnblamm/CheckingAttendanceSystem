@@ -39,21 +39,21 @@ class LoginVC: UIViewController {
             return
         }
         
-        let username = _username.text
+        let email = _username.text
         let password = _password.text
-        if(username == "" || password == "")
+        if(email == "" || password == "")
         {
             return
         }
-        DoLogin(username!, password!)
+        DoLogin(email!, password!)
     }
-        func DoLogin(_ usrnm:String, _ psw:String )
+        func DoLogin(_ email:String, _ password:String )
         {
             let url = URL(string: "https://iteccyle8.herokuapp.com/authenticate/login")
             let session = URLSession.shared
             let request = NSMutableURLRequest(url: url!)
             request.httpMethod = "POST"
-            let paramToSend = "username" + usrnm + "& password= " + psw
+            let paramToSend = "email" + email + "& password= " + password
             request.httpBody = paramToSend.data(using: String.Encoding.utf8)
             let task = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) in
                 guard let _:Data = data else

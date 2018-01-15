@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC2857E3200CE9AD0036EC34 /* social-facebook-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CC2857E2200CE9AD0036EC34 /* social-facebook-icon.png */; };
+		CC654EC91FF217C9009C5C97 /* LoginKit in Resources */ = {isa = PBXBuildFile; fileRef = CC654EC81FF217C9009C5C97 /* LoginKit */; };
 		CCD422D01FEF9BEF00C7A938 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD422CF1FEF9BEF00C7A938 /* MainVC.swift */; };
 		CCE89BAF1FC5C87B00609E3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE89BAE1FC5C87B00609E3A /* AppDelegate.swift */; };
 		CCE89BB11FC5C87B00609E3A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE89BB01FC5C87B00609E3A /* LoginVC.swift */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC2857E2200CE9AD0036EC34 /* social-facebook-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "social-facebook-icon.png"; sourceTree = "<group>"; };
+		CC654EC81FF217C9009C5C97 /* LoginKit */ = {isa = PBXFileReference; lastKnownFileType = folder; path = LoginKit; sourceTree = "<group>"; };
 		CCD422CF1FEF9BEF00C7A938 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		CCE89BAB1FC5C87B00609E3A /* CheckingAttendanceSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckingAttendanceSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCE89BAE1FC5C87B00609E3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +93,7 @@
 		CCE89BA21FC5C87B00609E3A = {
 			isa = PBXGroup;
 			children = (
+				CC654EC81FF217C9009C5C97 /* LoginKit */,
 				CCE89BDC1FC5CF5B00609E3A /* Images */,
 				CCE89BAD1FC5C87B00609E3A /* CheckingAttendanceSystem */,
 				CCE89BC21FC5C87B00609E3A /* CheckingAttendanceSystemTests */,
@@ -142,6 +147,7 @@
 		CCE89BDC1FC5CF5B00609E3A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				CC2857E2200CE9AD0036EC34 /* social-facebook-icon.png */,
 				CCE89BE41FC5DEDE00609E3A /* appicon.png */,
 				CCE89BE31FC5DEDE00609E3A /* loading.png */,
 				CCE89BDE1FC5CFFB00609E3A /* download.png */,
@@ -263,9 +269,11 @@
 				CCE89BE11FC5CFFB00609E3A /* download.png in Resources */,
 				CCE89BE21FC5CFFB00609E3A /* iteclogo_200.jpg in Resources */,
 				CCE89BB61FC5C87B00609E3A /* Assets.xcassets in Resources */,
+				CC2857E3200CE9AD0036EC34 /* social-facebook-icon.png in Resources */,
 				CCE89BB41FC5C87B00609E3A /* Main.storyboard in Resources */,
 				CCE89BE01FC5CFFB00609E3A /* logo-khtn.png in Resources */,
 				CCE89BE51FC5DEDE00609E3A /* loading.png in Resources */,
+				CC654EC91FF217C9009C5C97 /* LoginKit in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
